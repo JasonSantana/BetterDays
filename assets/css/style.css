@@ -103,7 +103,7 @@ a:hover {
 	width: 100%;
 	background-color: #f2e9e4;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	position: sticky;
 	top: 0;
@@ -112,15 +112,17 @@ a:hover {
 
 nav {
 	display: flex;
+	
 }
 
 nav ul {
 	display: flex;
 	flex-direction: row;
+	justify-items: space-between;
 }
 
 nav ul li {
-	padding-left: 3em;
+	padding-left: 18em;
 	list-style: none;
 	transition: 0.5s ease;
 }
@@ -292,25 +294,34 @@ span {
 	max-height: 100vh;
 	z-index: -1;
 	object-fit: cover;
+	filter: grayscale(.4);
 }
 
 .top-items {
 	display: flex;
 	position: absolute;
 	flex-direction: column;
+	margin-top:10%;
 	align-items: center;
+	border:2px solid black;
+	border-radius: 2em;
+	background: transparent;
+	filter: grayscale(.5);
+	max-width:75%;
 }
 
 .top-items h1 {
 	font-family: "Lato", sans-serif;
 	font-size: 7rem;
+	font-weight: 800;
 	color: white;
 	text-shadow: 2px 3px black;
 }
 
 .top-items h2 {
-	font-family: "Noto Sans Mono", monospace;
-	font-size: 3rem;
+	font-family: "Lato", monospace;
+	font-size: 5rem;
+	font-weight: 1000;
 	color: white;
 	text-shadow: 2px 3px black;
 }
@@ -320,6 +331,8 @@ span {
 	text-align: center;
 	max-width: 500px;
 	font-size: 1.5em;
+	font-weight: 800;
+	text-shadow: .08em .05em black;
 }
 
 /* Contact-Middle */
@@ -420,6 +433,25 @@ span {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.bio-mid-left h1{
+ 	font-family: "Concert One", cursive;
+	font-size: 5rem;
+	color: #4a4e69;
+	text-shadow: .02em .05em gray;
+}
+.bio-mid-left h2{
+	font-family: "Noto Sans Mono", monospace;
+	font-size: 2rem;
+	color: #4a4e69;
+	text-shadow: .02em .05em gray;
+}
+.bio-mid-left h3{
+	font-family: "Lato", sans-serif;
+	font-size: 10rem;
+	color: #4a4e69;
+	text-shadow: .02em .05em gray;
 }
 
 .bio-mid-right {
@@ -612,9 +644,7 @@ span {
 		height: 37vh;
 	}
 
-	.top-items {
-	}
-
+	
 	.top-items h1 {
 		font-size: 2rem;
 	}
@@ -783,8 +813,6 @@ span {
 		height: 50vh;
 	}
 
-	.top-items {
-	}
 
 	.top-items h1 {
 		font-size: 3.5rem;
@@ -1145,8 +1173,6 @@ span {
 		height: 100vh;
 	}
 
-	.top-items {
-	}
 
 	.top-items h1 {
 		font-size: 6rem;
@@ -1305,6 +1331,10 @@ span {
 		object-fit: cover;
 	}
 
+	.top-items h2 {
+		font-size: 5rem;
+	}
+
 	.mid-item {
 		height: 25em;
 		width: 20rem;
@@ -1320,7 +1350,7 @@ span {
 	}
 
 	.mid-item img {
-		height: 20vh;
+		height: 25vh;
 		width: 100%;
 		border-radius: 0.2em;
 	}
